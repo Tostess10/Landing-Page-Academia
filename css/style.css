@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@100;400&family=Roboto:wght@500&display=swap');
+
+/* Zerando CSS */
+
+* {
+  margin: 0px;
+  box-sizing: border-box;
+  padding: 0px;
+
+}
+
+/* Fundo-tela*/
+
+html {
+
+  width: 100%;
+  height: 100vh;
+  font-size: 62, 5%;
+  color: white;
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+
+  background: linear-gradient(rgba(20, 20, 20, 1), rgba(20, 20, 20, 0.9));
+  background-image: url("images/2.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-position-y: center;
+  background-repeat: no-repeat;
+
+
+}
+
+/* Menu - Header -Navbar  */
+
+header {
+  width: 100%;
+  height: 7vh;
+  background-color: rgba(20, 20, 20, 0.1);
+
+}
+
+.menu-content {
+  text-transform: uppercase;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 18px;
+
+}
+
+.logo {
+  font-size: 18px;
+  letter-spacing: 5px;
+  display: flex;
+  justify-content: flex-start;
+  height: 0px;
+  cursor: pointer;
+}
+
+.logo:hover {
+  transition: 0.3s all;
+}
+
+.menu-content .list-items {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+
+}
+
+.menu-content .list-items a {
+
+  text-decoration: none;
+  color: white;
+  padding: 15px;
+  transform: 3 ease-in;
+  position: relative;
+}
+
+.menu-content .list-items a:before {
+  content: ' ';
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 0px;
+  height: 1px;
+  background-color: rgb(251, 235, 0);
+  transition: all 1.0s ease;
+
+}
+
+.menu-content .list-items a:hover:before {
+  width: 100%;
+
+}
+
+/* Centro - Conteudo Principal */
+
+main {
+  height: 93vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+/* Textos Conteudo Pricinpal*/
+
+h1 {
+  width: 850px;
+  font-size: 5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+
+}
+
+h2 {
+  margin-bottom: 3rem;
+  font-size: 2rem;
+  color: rgb(165, 165, 165);
+  text-transform: uppercase;
+  font-family: sans-serif;
+}
+
+/* Botões */
+
+.btn {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.btn button {
+  border: 2px solid white;
+  width: 250px;
+  height: 60px;
+  cursor: pointer;
+  color: white;
+  text-transform: uppercase;
+  background-color: transparent;
+  letter-spacing: 0.2rem;
+  border-radius: 15px;
+  font-weight: bold;
+  position: relative;
+  transition: 0.3s;
+}
+
+.btn button:hover {
+  color: rgb(251, 235, 0);
+}
+
+.btn button:before {
+  content: ' ';
+  bottom: 0px;
+  left: 0px;
+  position: absolute;
+  height: 60px;
+  width: 0px;
+  background-color: rgb(61, 61, 61);
+  z-index: -1;
+  transition: 1s;
+
+
+}
+
+.btn button:hover:before {
+  width: 100%;
+
+}
